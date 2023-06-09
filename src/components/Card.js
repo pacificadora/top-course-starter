@@ -15,6 +15,7 @@ const Card = (props) => {
       //likedCourse ke array me daalna h 
       if(likedCourses.length===0){
         setLikedCourses([course.id]);
+        toast.success("Liked Successful")
       }else{
         setLikedCourses((prev)=>[...prev, course.id])
         toast.success("Liked Successful")
